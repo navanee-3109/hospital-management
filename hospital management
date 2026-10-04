@@ -1,0 +1,461 @@
+Create a complete responsive Hospital Management System web application.
+
+Project Name:
+Hospital Management System
+
+Student Details:
+Name: Navaneethan. S
+Section: AI&DS-B
+
+IMPORTANT:
+Build this as a functional web application, not just a static landing page.
+Use a clean professional hospital dashboard UI.
+The application must be responsive for desktop, tablet and mobile.
+
+DESIGN:
+Use a modern medical dashboard design.
+Primary colors: blue, cyan, white and light gray.
+Use clean cards, rounded corners, icons, tables and professional spacing.
+The UI should look like a real hospital management software.
+
+MAIN SIDEBAR:
+Create a fixed left sidebar containing:
+
+1. Dashboard
+2. Patient Management
+3. Doctor Management
+4. Department Management
+5. Appointment Management
+6. Prescription Management
+7. Billing & Payments
+8. Reports
+9. User Management
+10. Logout
+
+HEADER:
+Show:
+Hospital Management System
+Better Records | Faster Care | Healthier Tomorrow
+
+Show logged-in user:
+Admin
+
+--------------------------------------------------
+DASHBOARD
+--------------------------------------------------
+
+Create dashboard statistics cards:
+
+Total Patients: 1240
+Total Doctors: 320
+Today's Appointments: 85
+Pending Bills: 156
+
+Add a Recent Appointments table with:
+
+Appointment ID
+Date
+Patient
+Doctor
+Department
+Status
+
+Status values:
+Confirmed
+Pending
+Cancelled
+
+Add dashboard sections for:
+
+Patient Statistics
+Appointment Statistics
+Billing Summary
+Recent Patients
+
+Use charts where appropriate.
+
+--------------------------------------------------
+PATIENT MANAGEMENT
+--------------------------------------------------
+
+Create a complete patient management page.
+
+Features:
+
+- Add Patient
+- Edit Patient
+- Delete Patient
+- Search Patient
+- View Patient Details
+
+Patient fields:
+
+patient_id
+name
+age
+gender
+phone
+email
+address
+blood_group
+date_of_birth
+emergency_contact
+medical_history
+
+Display patients in a professional table.
+
+Actions:
+View
+Edit
+Delete
+
+Add confirmation before deleting.
+
+--------------------------------------------------
+DOCTOR MANAGEMENT
+--------------------------------------------------
+
+Create Doctor Management.
+
+Features:
+
+- Add Doctor
+- Edit Doctor
+- Delete Doctor
+- Search Doctor
+- View Doctor
+
+Doctor fields:
+
+doctor_id
+name
+specialization
+department
+phone
+email
+experience
+availability
+
+Show doctors as cards or table.
+
+Example doctors:
+
+Dr. Smith - Cardiologist
+Dr. Priya - Neurologist
+Dr. Kumar - Dermatologist
+
+--------------------------------------------------
+DEPARTMENT MANAGEMENT
+--------------------------------------------------
+
+Create Department Management.
+
+Department fields:
+
+dept_id
+dept_name
+description
+
+Example departments:
+
+Cardiology
+Neurology
+Dermatology
+Orthopedics
+General Medicine
+Pediatrics
+
+Allow:
+Add
+Edit
+Delete
+Search
+
+--------------------------------------------------
+APPOINTMENT MANAGEMENT
+--------------------------------------------------
+
+Create Appointment Management.
+
+Features:
+
+- Book Appointment
+- Edit Appointment
+- Cancel Appointment
+- Search Appointment
+- Filter by date
+- Filter by doctor
+- Filter by status
+
+Appointment fields:
+
+appointment_id
+patient_id
+doctor_id
+department
+appointment_date
+appointment_time
+status
+
+Statuses:
+
+Confirmed
+Pending
+Cancelled
+Completed
+
+When creating an appointment, allow selecting an existing patient and doctor from dropdowns.
+
+--------------------------------------------------
+PRESCRIPTION MANAGEMENT
+--------------------------------------------------
+
+Create Prescription Management.
+
+Fields:
+
+prescription_id
+appointment_id
+patient
+doctor
+medicines
+dosage
+notes
+prescription_date
+
+Features:
+
+- Create prescription
+- Edit prescription
+- Delete prescription
+- View prescription
+
+Allow multiple medicines for one prescription.
+
+--------------------------------------------------
+BILLING & PAYMENT
+--------------------------------------------------
+
+Create Billing Management.
+
+Fields:
+
+bill_id
+appointment_id
+patient
+amount
+payment_status
+payment_date
+
+Payment status:
+
+Paid
+Pending
+Cancelled
+
+Features:
+
+- Create Bill
+- Edit Bill
+- Delete Bill
+- Search Bill
+- Filter Paid/Pending
+- View Bill
+
+Display total billing amount and pending billing amount.
+
+Use Indian Rupee symbol ₹.
+
+--------------------------------------------------
+REPORTS
+--------------------------------------------------
+
+Create Reports page.
+
+Show:
+
+Total Patients
+Total Doctors
+Total Appointments
+Completed Appointments
+Cancelled Appointments
+Total Revenue
+Pending Payments
+
+Add charts for:
+
+Patient statistics
+Appointments
+Revenue
+Department-wise patients
+
+Provide a professional report dashboard.
+
+--------------------------------------------------
+USER MANAGEMENT
+--------------------------------------------------
+
+Create Admin User Management.
+
+User fields:
+
+user_id
+name
+email
+password
+role
+
+Roles:
+
+Admin
+Doctor
+Receptionist
+
+Create login screen.
+
+Login fields:
+
+Email
+Password
+
+After successful login, redirect to Dashboard.
+
+Add Logout functionality.
+
+--------------------------------------------------
+DATABASE
+--------------------------------------------------
+
+Create a proper relational database/data model for the application.
+
+Tables/entities:
+
+users
+patients
+doctors
+departments
+appointments
+prescriptions
+billing
+
+Relationships:
+
+departments → doctors
+patients → appointments
+doctors → appointments
+appointments → prescriptions
+appointments → billing
+users → system access
+
+Use unique IDs and foreign-key relationships where supported.
+
+Do not create duplicate patient, doctor or appointment records unnecessarily.
+
+--------------------------------------------------
+VALIDATION
+--------------------------------------------------
+
+Add form validation.
+
+Required fields should not be empty.
+
+Validate:
+Email
+Phone number
+Age
+Date
+Amount
+
+Show friendly validation messages.
+
+Before deleting any record, show confirmation.
+
+--------------------------------------------------
+SEARCH AND FILTER
+--------------------------------------------------
+
+Every major management page should support search.
+
+Patients:
+Search by name, ID or phone.
+
+Doctors:
+Search by name or specialization.
+
+Appointments:
+Search by patient or doctor.
+
+Billing:
+Search by patient or bill ID.
+
+--------------------------------------------------
+UI
+--------------------------------------------------
+
+Use:
+
+Responsive sidebar
+Professional dashboard cards
+Tables
+Modal forms
+Search bars
+Dropdown filters
+Buttons
+Status badges
+Charts
+Icons
+
+Make the UI visually similar to a professional hospital administration dashboard.
+
+Avoid excessive animations.
+
+Keep the interface simple and easy to demonstrate in a college project.
+
+--------------------------------------------------
+IMPORTANT IMPLEMENTATION RULE
+--------------------------------------------------
+
+Do not only create dummy-looking screens.
+
+Implement actual CRUD functionality wherever Base44 supports it:
+
+CREATE
+READ
+UPDATE
+DELETE
+
+Data entered through forms should appear in the corresponding tables.
+
+Use Base44's supported database/entities/backend features for data persistence.
+
+Do not claim that MySQL, PHP, XAMPP or another backend technology is being used unless it is actually configured and connected.
+
+If Base44 uses its own database/backend internally, describe it as:
+"Base44 database/backend services"
+
+The application should be ready for a college project demonstration.
+
+--------------------------------------------------
+FINAL REQUIREMENT
+--------------------------------------------------
+
+Create a polished Hospital Management System with:
+
+Dashboard
+Patients
+Doctors
+Departments
+Appointments
+Prescriptions
+Billing
+Reports
+Users
+Login
+Logout
+Search
+Filters
+CRUD operations
+Database relationships
+Responsive design
+
+Make the application functional, professional and easy to demonstrate to faculty.
